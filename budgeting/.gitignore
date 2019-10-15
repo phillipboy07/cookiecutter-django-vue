@@ -1,9 +1,9 @@
-# OSX
+### OSX ###
 .DS_Store
 .AppleDouble
 .LSOverride
 
-# SublimeText
+### SublimeText ###
 # cache files for sublime text
 *.tmlanguage.cache
 *.tmPreferences.cache
@@ -24,6 +24,8 @@ logs
 *.log
 pip-log.txt
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Unit test / coverage reports
 .coverage
@@ -39,33 +41,38 @@ htmlcov
 webpack-stats.json
 dist/
 
-# Pycharm
-.idea/*
-
 # Vim
 *~
 *.swp
 *.swo
 
 # npm
-node_modules/
+node_modules
 
 # Compass
 .sass-cache
 
-# virtual environments
-.env
-ENV/
-
 # User-uploaded media
-*/media/
+media/
+
+# Collected staticfiles
 */staticfiles/
 
-# Cache
 .cache/
+**/certs
 
-# Webpack tracker
-webpack.json
-
-.history
+# Editor directories and files
+.idea
 .vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# VS code
+.vscode
+.pythonconfig
+
+# Venv
+venv

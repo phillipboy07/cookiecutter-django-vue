@@ -1,7 +1,10 @@
-version: '3.3'
+version: "3.3"
 
 volumes:
-    budgeting_data: {}
+  budgeting_data: {}
+
+# Example of a command to run Django-based commands
+# docker exec -it budgeting_backend_1 python3 /app/manage.py createsuperuser
 
 services:
   backend:
@@ -30,8 +33,6 @@ services:
     volumes:
       - budgeting_data:/var/lib/postgresql/data
     env_file: .env
-
-
 
   nginx:
     image: nginx:alpine
